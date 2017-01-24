@@ -1,0 +1,29 @@
+<div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar" ></span>
+              <span class="icon-bar" ></span>
+              <span class="icon-bar" ></span>
+           </button>
+          <!-- <a href="/toProfile">CalculatorHello {{welcomeMessage}}!</a>-->
+          </div>
+
+          <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+              {{#if LOGGEDIN}}
+                <li><a href="/toLanding">Calculator</a></li>
+                <li><a href="/logout">Logout</a></li>
+              {{else}}
+                <li><a href="/">Login</a></li>
+              {{/if}}
+              </ul>
+               {{#if LOGGEDIN}}
+              <ul class="nav navbar-nav navbar-right">
+                              <li><a href="/toProfile"><span class="glyphicon glyphicon-user"></span> {{welcomeMessage}}</a></li>
+                             
+              </ul>
+              {{/if}}
+          </div>
+      </div>
+</div>

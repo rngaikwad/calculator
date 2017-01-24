@@ -1,0 +1,34 @@
+ {{>includeHead}}
+ {{>includeMenu}}
+<div class="container">
+  <div class="row">
+  <div class="col-md-12" style="margin-top:40px!important;">
+  <div class="col-md-2"></div>
+    <div class="col-md-8 panel panel-default" style="margin-top:40px!important;">
+       <p class="help-block text-center text-small" style="margin-bottom:40px!important;">
+          Welcome {{name}}!,   
+      </p>
+      <form class="margin-base-vertical" method="post" action="/toCity" role="form">
+      <center>
+         <div class="form-group"> 
+          <label for="" class="text-small" >Username : {{name}}</label>
+          
+        
+        </div>
+        <div class="form-group"> 
+          <label for="" class="text-small">Address : {{address}}</label>
+          
+         
+        </div>
+        <div class="form-group"> 
+          <label for="" class="text-small">Mobile : {{mobile}}</label>
+          
+         
+        </div>
+        </center>
+      </form>
+    </div>
+    <div class="col-md-2"></div>
+    </div>
+  </div>
+</div>
